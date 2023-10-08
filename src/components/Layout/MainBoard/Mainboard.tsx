@@ -1,5 +1,5 @@
 const Mainboard = () => {
-  return <div className="bg-boardBg grow">Mainboard</div>;
+  return <div className="bg-boardBg grow min-h-screen">Mainboard</div>;
 };
 
 export default Mainboard;

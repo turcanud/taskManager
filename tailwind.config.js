@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         navBg: '#333435',
+        navHoverBg: '#1e1f21',
         sideBg: '#333435',
         boardBg: '#1e1f21',
         txtColor: '#EBF5EE',

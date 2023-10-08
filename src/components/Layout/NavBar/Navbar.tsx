@@ -1,12 +1,8 @@
-import {FiMenu} from "react-icons/fi";
 import {AiFillCaretDown} from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between px-6 bg-navBg h-14 items-center border-b border-lines">
-      <button type="button" className="text-3xl">
-        <FiMenu />
-      </button>
+    <nav className="flex justify-end px-6 bg-navBg h-14 items-center border-b border-lines">
       <div className="flex items-center space-x-1">
         <button
           type="button"
