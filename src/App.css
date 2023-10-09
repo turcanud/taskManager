@@ -1,0 +1,15 @@
+::-webkit-scrollbar {
+  width: 0.3125em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: aliceblue;
+  border-radius: 0.625em;
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
