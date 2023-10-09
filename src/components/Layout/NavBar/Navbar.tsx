@@ -1,9 +1,10 @@
-import {AiFillCaretDown, AiOutlineSearch} from "react-icons/ai";
+import {AiOutlineSearch} from "react-icons/ai";
+import {BsThreeDots} from "react-icons/bs";
 
 const Navbar = () => {
   return (
     <nav className="flex fixed inset-0 justify-between px-6 bg-navBg h-14 items-center border-b border-lines">
-      <div className="py-4 text-4xl font-bold text-center">
+      <div className="py-4 text-4xl font-bold text-center pointer-events-none">
         <span className="gradient-text">Task Manager</span>
       </div>
 
@@ -17,12 +18,7 @@ const Navbar = () => {
         />
       </div>
 
-      <div className="flex items-center space-x-1">
-        <button
-          type="button"
-          className="bg-slate-800 rounded-full w-11 h-11 border border-lines"></button>
-        <AiFillCaretDown className="" />
-      </div>
+      <BsThreeDots className="text-xl" />
     </nav>
   );
 };

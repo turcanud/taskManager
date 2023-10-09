@@ -1,10 +1,19 @@
 import {PiHouse} from "react-icons/pi";
 import ListOfProjects from "../../Projects/ListOfProjects";
 import {AiOutlinePlus, AiOutlineStar} from "react-icons/ai";
+import {useState} from "react";
 
 const Sidebar = () => {
+  const [projects, setProjects] = useState([
+    {
+      name: "Website Redesign",
+    },
+    {
+      name: "Hellos",
+    },
+  ]);
   return (
-    <aside className="bg-sideBg border-r border-lines min-h-screen w-72 flex flex-col justify-between fixed inset-y-14">
+    <aside className="bg-sideBg border-r border-lines min-h-screen w-72 flex flex-col fixed inset-y-14">
       <div className="border-b px-5 border-lines flex py-8">
         <button type="button" className="bg-green-700 rounded-full w-12 h-12">
           TD
@@ -28,11 +37,12 @@ const Sidebar = () => {
       </div>
       <h1 className="text-lines font-bold text-sm px-4 mt-1">Projects</h1>
       <div className="px-5 overflow-auto invisible hover:visible">
-        <ListOfProjects />
+        <ListOfProjects projects={projects} />
       </div>
       <div className="mb-16 w-72 pt-2 bg-navBg border-t border-r border-lines flex items-center justify-center">
         <button
           type="button"
+          onClick={() => setProjects([...projects, {name: "asdasd"}])}
           className="rounded-lg h-10 border w-full font-medium flex justify-start items-center space-x-1 mx-2 px-2 border-lines focus:border-white">
           <AiOutlinePlus className="text-2xl" />
           <h1>New Project</h1>
